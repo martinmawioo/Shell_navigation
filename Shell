@@ -1,0 +1,37 @@
+root@3993783a79d9:~# cd root
+bash: cd: root: No such file or directory
+root@3993783a79d9:~# touch so_cool
+root@3993783a79d9:~# ls
+empty_directory  not_here  old_school  ready_to_be_removed  school  so_cool
+root@3993783a79d9:~# cp school /tmp
+root@3993783a79d9:~# cd/tmp
+bash: cd/tmp: No such file or directory
+root@3993783a79d9:~#  cd /tmp
+root@3993783a79d9:/tmp# ls
+school  tmp.DAOEzJT0J6  tmp.dOKjikw0Ig  tmpztrs6ymg
+root@3993783a79d9:/tmp# cd /root
+root@3993783a79d9:~# mv old_school new_school
+root@3993783a79d9:~# ls
+empty_directory  new_school  not_here  ready_to_be_removed  school  so_cool
+root@3993783a79d9:~# 
+root@3993783a79d9:~# ls
+empty_directory  new_school  not_here  ready_to_be_removed  school  so_cool
+root@3993783a79d9:~# mv not_here /tmp/right_school
+root@3993783a79d9:~# la
+.bashrc  .cache  empty_directory  new_school  .profile  ready_to_be_removed  school  so_cool
+root@3993783a79d9:~# ls
+empty_directory  new_school  ready_to_be_removed  school  so_cool
+root@3993783a79d9:~# cd /root
+root@3993783a79d9:~# ls
+empty_directory  new_school  ready_to_be_removed  school  so_cool
+root@3993783a79d9:~# rm ready_to_be_removed
+root@3993783a79d9:~# ls
+empty_directory  new_school  school  so_cool
+root@3993783a79d9:~# cd /root
+root@3993783a79d9:~# mkdir school_is_amazing
+root@3993783a79d9:~# ls
+empty_directory  new_school  school  school_is_amazing  so_cool
+root@3993783a79d9:~# rmdir empty_directory
+root@3993783a79d9:~# ls
+new_school  school  school_is_amazing  so_cool
+root@3993783a79d9:~# 
